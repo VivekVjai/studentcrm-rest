@@ -1,0 +1,26 @@
+#api call for fetching all students
+
+###
+
+GET  http://127.0.0.1:8000/crm/students/
+
+###
+POST  http://127.0.0.1:8000/crm/students/
+Content-Type: application/json
+
+{
+    "name":"dinu",
+    "course":"django",
+    "address":"adress line1,address line2",
+    "phone":8566587167
+}
+
+#api call for student retreive update and destroy
+###
+
+GET http://127.0.0.1:8000/crm/students/1/
+
+#api call for delete a student
+###
+
+DELETE http://127.0.0.1:8000/crm/students/2/
